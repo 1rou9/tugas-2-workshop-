@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Identitas Mahasiswa</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <h1><a href="https://unpam.ac.id" target="_blank">Universitas Pamulang</a></h1>
-    <h2>Teknik Informatika</h2>
-    <div class="info">
-      <p><span>Nama:</span> Dimas Adi Saputro </p>
-      <p><span>NIM:</span> 241011402161 </p>
-      <p><span>Kelas:</span> 02TPLE007 </p>
+
+  <input type="checkbox" id="darkToggle" hidden />
+  <label class="toggle-btn" for="darkToggle">🌙 / ☀️</label>
+
+  <header>
+    <div class="container">
+      <h1 class="typing">Selamat Datang di Portofolio Saya</h1>
+      <p>Dimas Adi Saputro</p>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+      </nav>
     </div>
+  </header>
+
+  <section id="about" class="section fade">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya Dimas Adi Saputro mahasiswa aktif Universitas Pamulang jurusan Teknik Informatika. Tertarik dengan pengembangan web front-end dan desain UI/UX.
+    </p>
+  </section>
+
+  <section id="projects" class="section fade">
+  <h2>Proyek Saya</h2>
+  <div class="card-container">
+    <a href="https://1rou9.github.io/tugas-3-workshop/" target="_blank" class="card">
+      <strong>Aplikasi Cuaca</strong>
+      <p>Web cuaca dengan API terbuka & tampilan simpel.</p>
+    </a>
+    <a href="https://1rou9.github.io/tugas-2-workshop-/" target="_blank" class="card">
+      <strong>Portofolio Ini</strong>
+      <p>Contoh portofolio lengkap responsif dan interaktif.</p>
+    </a>
   </div>
+</section>
+
+
+  <section id="gallery" class="section fade">
+    <h2>Galeri</h2>
+    <div class="gallery">
+      <img src="img/pertama.png">
+      <img src="img/kedua.png">
+    </div>
+  </section>
+
+  <section id="contact" class="section fade">
+    <h2>Kontak</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan..." required></textarea>
+      <button>Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Non Nin - Universitas Pamulang</p>
+  </footer>
 </body>
 </html>
